@@ -1,5 +1,5 @@
 def printGreeting():
-	print "HELLO MUM!"
+	print "HELLO MUM - TOP OF THE WORLD"
 
 printGreeting()
 
