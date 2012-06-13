@@ -10,8 +10,7 @@ print "File path = " + file_path
 file_open = open(file_path, 'r')
 file_contents = file_open.read()
 string_occurrence_count = file_contents.count('New User Session')
-print "There were " + string_occurrence_count + " new user sessions listed in the log file"
-
+print "There were " + str(string_occurrence_count) + " new user sessions listed in the log file"
 
 raw_input("Press enter to continue")
 
