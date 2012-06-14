@@ -1,7 +1,7 @@
 import os
-folder_path = "C:\BEN\\text scrape test\\000 - logs\\"
+folder_path = "C:\BEN\\text scrape test\\Traders\\"
 files = os.listdir(folder_path)
-files = filter(lambda x: x.find("log0") >-1, files)
+files = filter(lambda x: x.find("Traders.txt") >-1, files)
 name_n_timestamp = dict([(x, os.stat(folder_path+x).st_mtime) for x in files])
 newest_log_file_name = max(name_n_timestamp, key=lambda k: name_n_timestamp.get(k))
 print "The latest log file is " + newest_log_file_name
