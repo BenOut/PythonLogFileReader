@@ -123,7 +123,7 @@ def find_previous_timestamp_in_logs():
 	print "last_timestamp_position = " + str(last_timestamp_position)
 	latest_timestamp_in_interactive_logs = newest_interactive_log_file_text[(last_timestamp_position-19):(last_timestamp_position+14)]
 	print "latest_timestamp_in_interactive_logs = " + latest_timestamp_in_interactive_logs + "!!!"
-	#write_to_text_file(python_log_file_for_updating, "latest_timestamp_in_interactive_logs")
+	write_to_text_file(python_log_file_for_updating, "latest_timestamp_in_interactive_logs")
 	#END - find_previous_timestamp_in_logs
 
 def get_previous_timestamp_from_python_log():
